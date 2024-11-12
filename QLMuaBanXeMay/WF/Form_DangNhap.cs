@@ -43,6 +43,8 @@ namespace QLMuaBanXeMay.WF
                             string diaChi = reader.GetString(5);
                             string email=reader.GetString(6);
                             string chucVu = reader.GetString(7);
+                            int luongCoBan = reader.GetInt32(8);
+
 
                             //if (chucVu != "Quản Lý")
                             //{
@@ -55,7 +57,8 @@ namespace QLMuaBanXeMay.WF
                             //    MY_DB.setConnectionQL();
                             //}
 
-                            NhanVien nhanVien = new NhanVien(cccdNV,tenNV,ngaySinh,gioiTinh,sdt,diaChi,email,chucVu);
+
+                            NhanVien nhanVien = new NhanVien(cccdNV,tenNV,ngaySinh,gioiTinh,sdt,diaChi,email,chucVu, luongCoBan);
                             Form1 form1 = new Form1(nhanVien);
                             form1.Show();
                             this.Hide();

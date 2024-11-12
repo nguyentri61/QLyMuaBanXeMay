@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,8 +24,8 @@ namespace QLMuaBanXeMay.WF
 
         private void Form_ThemHoaDonLuong_Load(object sender, EventArgs e)
         {
-            dgvThongTinHoaDonNV.DataSource = DAONhanVien.LoadThongTinNhanVienCaLamHoaDon(hdl.CCCDNV);
-            LoadGrid();
+            //dgvThongTinHoaDonNV.DataSource = DAONhanVien.LoadThongTinNhanVienCaLamHoaDon(hdl.CCCDNV);
+            //LoadGrid();
         }
 
         private void LoadGrid()
@@ -32,9 +33,6 @@ namespace QLMuaBanXeMay.WF
             txtMaNV.Text = string.Empty;
             txtTenNV.Text = string.Empty;
             txtChucVu.Text = string.Empty;
-            txtLuongCoBan.Text = string.Empty;
-            txtSoGioLam.Text = string.Empty;
-            txtTongTien.Text = string.Empty;
             if (dgvThongTinHoaDonNV.Rows.Count > 0)
             {
                 Loadtxt();
@@ -48,47 +46,22 @@ namespace QLMuaBanXeMay.WF
             txtMaNV.Text = row.Cells[0].Value.ToString();
             txtTenNV.Text = row.Cells[1].Value.ToString();
             txtChucVu.Text = row.Cells[2].Value.ToString();
-            txtLuongCoBan.Text = row.Cells[3].Value.ToString();
-            double tongGio = TongSoGio();
-            txtSoGioLam.Text = tongGio.ToString("F2");
-            double tongtien = tongGio * Int32.Parse(txtLuongCoBan.Text);
-            txtTongTien.Text = tongtien.ToString("F2");
+
         }
         private void dgvThongTinHoaDonNV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-        private double TongSoGio()
-        {
-            double tongSoGio = 0;
-
-            foreach (DataGridViewRow row in dgvThongTinHoaDonNV.Rows)
-            {
-                if (row.Cells[4].Value != null && row.Cells[5].Value != null) // Kiểm tra các giá trị không null
-                {
-                    DateTime thoiGianBatDau = Convert.ToDateTime(row.Cells[4].Value);
-                    DateTime thoiGianKetThuc = Convert.ToDateTime(row.Cells[5].Value);
-
-                    TimeSpan khoangThoiGian = thoiGianKetThuc - thoiGianBatDau;
-                    tongSoGio += khoangThoiGian.TotalHours;
-                }
-            }
-
-            return tongSoGio;
-        }
-
 
         private void btnXuatHoaDon_Click(object sender, EventArgs e)
         {
             try
             {
-                TimeSpan soGioLam = TimeSpan.Parse(txtSoGioLam.Text);
-                double sgl = soGioLam.TotalHours;
+                hdl.CCCDNV=int.Parse(txtMaNV.Text);
+                hdl.SoGioLam = double.Parse(dgthongTinTongHopLuongNV.Rows[0].Cells["TongGioLam"].Value.ToString());
+               
+                hdl.TongTien = decimal.Parse(dgthongTinTongHopLuongNV.Rows[0].Cells["TienLuong"].Value.ToString());
                 hdl.NgayXuat = dtpNgayXuat.Value;
-                hdl.SoGioLam = sgl;
-                hdl.TongTien = int.Parse(txtTongTien.Text);
-                hdl.CCCDNV = hdl.CCCDNV;
-
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
@@ -103,7 +76,8 @@ namespace QLMuaBanXeMay.WF
         private void dtpNgayXuat_ValueChanged(object sender, EventArgs e)
         {
             dgvThongTinHoaDonNV.DataSource = DAOHoaDonLuong.LoadCaLamViecTheoNgayVaTongSoGio(hdl.CCCDNV, dtpNgayXuat.Value);
-            LoadGrid();  
+            LoadGrid();
+            loadThongTinTongHopLuong();
         }
 
         private void txtTongTien_TextChanged(object sender, EventArgs e)
@@ -115,5 +89,18 @@ namespace QLMuaBanXeMay.WF
         {
 
         }
+        private void loadThongTinTongHopLuong()
+        {
+            try
+            {
+                dgthongTinTongHopLuongNV.DataSource = DAOHoaDonLuong.LoadThongTinTongHop(hdl.CCCDNV, dtpNgayXuat.Value.Month, dtpNgayXuat.Value.Year);
+
+            }
+            catch
+            {
+
+            }
+        }
+
     }
 }
