@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbbChucVu = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbbGioiTinh = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnXacNhan = new Guna.UI2.WinForms.Guna2Button();
             this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbbGioiTinh = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cbbChucVu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +84,43 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thêm Nhân Viên";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // cbbChucVu
+            // 
+            this.cbbChucVu.BackColor = System.Drawing.Color.Transparent;
+            this.cbbChucVu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbChucVu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbChucVu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbChucVu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbChucVu.ItemHeight = 30;
+            this.cbbChucVu.Items.AddRange(new object[] {
+            "Quản Lý",
+            "Kỹ Thuật",
+            "Bán Hàng"});
+            this.cbbChucVu.Location = new System.Drawing.Point(624, 273);
+            this.cbbChucVu.Name = "cbbChucVu";
+            this.cbbChucVu.Size = new System.Drawing.Size(307, 36);
+            this.cbbChucVu.TabIndex = 83;
+            // 
+            // cbbGioiTinh
+            // 
+            this.cbbGioiTinh.BackColor = System.Drawing.Color.Transparent;
+            this.cbbGioiTinh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbGioiTinh.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbGioiTinh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbGioiTinh.ItemHeight = 30;
+            this.cbbGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cbbGioiTinh.Location = new System.Drawing.Point(624, 45);
+            this.cbbGioiTinh.Name = "cbbGioiTinh";
+            this.cbbGioiTinh.Size = new System.Drawing.Size(307, 36);
+            this.cbbGioiTinh.TabIndex = 82;
             // 
             // btnXacNhan
             // 
@@ -354,43 +391,6 @@
             this.label5.Size = new System.Drawing.Size(67, 24);
             this.label5.TabIndex = 61;
             this.label5.Text = "CCCD:";
-            // 
-            // cbbGioiTinh
-            // 
-            this.cbbGioiTinh.BackColor = System.Drawing.Color.Transparent;
-            this.cbbGioiTinh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbGioiTinh.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbGioiTinh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbGioiTinh.ItemHeight = 30;
-            this.cbbGioiTinh.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.cbbGioiTinh.Location = new System.Drawing.Point(624, 45);
-            this.cbbGioiTinh.Name = "cbbGioiTinh";
-            this.cbbGioiTinh.Size = new System.Drawing.Size(307, 36);
-            this.cbbGioiTinh.TabIndex = 82;
-            // 
-            // cbbChucVu
-            // 
-            this.cbbChucVu.BackColor = System.Drawing.Color.Transparent;
-            this.cbbChucVu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbChucVu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbChucVu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbChucVu.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbChucVu.ItemHeight = 30;
-            this.cbbChucVu.Items.AddRange(new object[] {
-            "Quản Lý",
-            "Kỹ Thuật",
-            "Bán Hàng"});
-            this.cbbChucVu.Location = new System.Drawing.Point(624, 273);
-            this.cbbChucVu.Name = "cbbChucVu";
-            this.cbbChucVu.Size = new System.Drawing.Size(307, 36);
-            this.cbbChucVu.TabIndex = 83;
             // 
             // Form_ThemNhanVien
             // 

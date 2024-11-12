@@ -42,10 +42,10 @@ namespace QLMuaBanXeMay.UC
                     txtMaNV.Text = row.Cells[1].Value.ToString();
                     txtTenNV.Text = row.Cells[2].Value.ToString();
                     txtChucVu.Text = row.Cells[3].Value.ToString();
-                    txtSoGioLam.Text = row.Cells[6].Value.ToString();
-                    txtLuongCoBan.Text = row.Cells[7].Value.ToString();
-                    txtTongTien.Text = row.Cells[8].Value.ToString();
-                    dtpNgayXuat.Value = DateTime.Parse(row.Cells[9].Value.ToString());
+                    txtSoGioLam.Text = row.Cells[4].Value.ToString();
+                    txtLuongCoBan.Text = row.Cells[5].Value.ToString();
+                    txtTongTien.Text = row.Cells[6].Value.ToString();
+                    dtpNgayXuat.Value = DateTime.Parse(row.Cells[7].Value.ToString());
 
 
                     cthdl.CCCDNV = int.Parse(txtMaNV.Text);
@@ -120,6 +120,11 @@ namespace QLMuaBanXeMay.UC
         {
             Form_ChiTietHoaDonLuong form = new Form_ChiTietHoaDonLuong(cthdl);
             form.ShowDialog();
+        }
+
+        private void dgvHoaDonLuong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

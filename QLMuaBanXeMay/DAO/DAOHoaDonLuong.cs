@@ -30,6 +30,7 @@ namespace QLMuaBanXeMay.DAO
 
         public static void ThemHoaDonluong(HoaDonLuong hoaDonLuong)
         {
+            MessageBox.Show(hoaDonLuong.NgayXuat.ToString());
             using (SqlCommand command = new SqlCommand("AddHoaDonLuong", MY_DB.getConnection()))
             {
                 try
@@ -112,6 +113,26 @@ namespace QLMuaBanXeMay.DAO
             {
                 command.Parameters.AddWithValue("@CCCDNV", cccdNV);
                 command.Parameters.AddWithValue("@NgayXuat", ngayXuat);
+
+                MY_DB.openConnection();
+
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                MY_DB.closeConnection();
+
+                return dt;
+            }
+        }
+        public static DataTable LoadThongTinTongHop(int cccdNV, int thang, int nam)
+        {
+            MessageBox.Show(thang.ToString());
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.TinhTienLuongChiTiet(@CCCDNV,@YEAR,@MONTH);", MY_DB.getConnection()))
+            {
+                command.Parameters.AddWithValue("@CCCDNV", cccdNV);
+                command.Parameters.AddWithValue("@YEAR", nam);
+                command.Parameters.AddWithValue("@MONTH", thang);
 
                 MY_DB.openConnection();
 

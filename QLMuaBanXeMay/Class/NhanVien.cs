@@ -18,7 +18,7 @@ namespace QLMuaBanXeMay.Class
         private string diaChi;
         private string email;
         private string chucVu;
-
+   
         public NhanVien() { }
         public NhanVien(int ccCDNV, string tenNV, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, string email, string chucVu)
         {
