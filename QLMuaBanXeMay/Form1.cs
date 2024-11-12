@@ -32,14 +32,20 @@ namespace QLMuaBanXeMay
                 btnBillTool.Visible = false;
                 btnTool.Visible = false;
                 btn_QLVoucher.Visible = false;
-                
                 btnEmployee.Visible = false;
-            }else if(NhanVien.ChucVu== "Kỹ Thuật")
+                btn_calam.Visible = false;
+                btnThongKe.Visible = false;
+                btnHoaDonLuong.Visible = false;
+            }
+            else if(NhanVien.ChucVu== "Kỹ Thuật")
             {
                 btnBillBike.Visible = false;
                 btnMotobike.Visible = false;
                 btnEmployee.Visible = false;
                 btn_QLVoucher.Visible= false;
+                btn_calam.Visible = false;
+                btnThongKe.Visible = false;
+                btnHoaDonLuong.Visible = false;
             }
             
         }
