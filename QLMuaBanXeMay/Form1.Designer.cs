@@ -30,6 +30,7 @@
         {
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.btnGuest = new System.Windows.Forms.Button();
             this.btnMotobike = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.btnHoaDonLuong = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,15 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(196, 575);
             this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(200, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1282, 753);
+            this.panel5.TabIndex = 1;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // btnEmployee
             // 
@@ -172,7 +181,7 @@
             // 
             this.btnThongKe.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
             this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills_tools;
+            this.btnThongKe.Image = global::QLMuaBanXeMay.Properties.Resources.icons8_profit_16;
             this.btnThongKe.Location = new System.Drawing.Point(3, 350);
             this.btnThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThongKe.Name = "btnThongKe";
@@ -187,7 +196,7 @@
             // 
             this.btn_calam.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
             this.btn_calam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_calam.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills_tools;
+            this.btn_calam.Image = global::QLMuaBanXeMay.Properties.Resources.icons8_work_16;
             this.btn_calam.Location = new System.Drawing.Point(3, 408);
             this.btn_calam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_calam.Name = "btn_calam";
@@ -202,7 +211,7 @@
             // 
             this.btn_QLVoucher.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
             this.btn_QLVoucher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QLVoucher.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills_tools;
+            this.btn_QLVoucher.Image = global::QLMuaBanXeMay.Properties.Resources.icons8_voucher_16;
             this.btn_QLVoucher.Location = new System.Drawing.Point(3, 466);
             this.btn_QLVoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_QLVoucher.Name = "btn_QLVoucher";
@@ -217,7 +226,7 @@
             // 
             this.btnHoaDonLuong.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
             this.btnHoaDonLuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoaDonLuong.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills_tools;
+            this.btnHoaDonLuong.Image = global::QLMuaBanXeMay.Properties.Resources.icons8_cash_16;
             this.btnHoaDonLuong.Location = new System.Drawing.Point(3, 520);
             this.btnHoaDonLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHoaDonLuong.Name = "btnHoaDonLuong";
@@ -251,15 +260,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(90, 91);
             this.panel4.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(200, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1282, 753);
-            this.panel5.TabIndex = 1;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // Form1
             // 

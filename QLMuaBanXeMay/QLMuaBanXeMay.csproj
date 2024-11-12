@@ -710,5 +710,23 @@
   <ItemGroup>
     <None Include="Resources\title_hdl.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-work-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-work-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-work-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profit-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voucher-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cash-16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
