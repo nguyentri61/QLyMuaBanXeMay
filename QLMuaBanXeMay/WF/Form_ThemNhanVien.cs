@@ -38,6 +38,7 @@ namespace QLMuaBanXeMay.WF
                 Nv.DiaChi = txtDiaChi.Text;
                 Nv.Email = txtEmail.Text;
                 Nv.ChucVu = cbbChucVu.SelectedItem.ToString();
+                Nv.LuongCoBan = int.Parse(txtLuongCoBan.Text);
 
                 Tk.TenTK = txtTenTK.Text;
                 Tk.MatKhau = txtMatKhau.Text;

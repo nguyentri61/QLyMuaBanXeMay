@@ -22,6 +22,9 @@ namespace QLMuaBanXeMay.Class
        
         //static String connQL = @"Data Source=MINHTRI\SQLEXPRESS;Initial Catalog=QLXePT;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
+        //static String connQL = @"Data Source=MINHTRI\SQLEXPRESS;Initial Catalog=QLXePT;Integrated Security=True;TrustServerCertificate=True";
+
+
         static SqlConnection con = new SqlConnection(connQL);
 
         static public SqlConnection getConnection()

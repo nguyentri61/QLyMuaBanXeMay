@@ -46,39 +46,6 @@ namespace QLMuaBanXeMay.UC
             }
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Lấy thông tin từ các textbox
-                NhanVien nhanVien = new NhanVien();
-                nhanVien.CCCDNV = int.Parse(txtCCCD.Text);
-                nhanVien.TenNV = txtTenNV.Text;
-                nhanVien.NgaySinh = dtpNgaySinh.Value;
-                nhanVien.GioiTinh = txtGioiTinh.Text;
-                nhanVien.SDT = txtSDT.Text;
-                nhanVien.DiaChi = txtDiaChi.Text;
-                nhanVien.Email = txtEmail.Text;
-                nhanVien.ChucVu = txtChucVu.Text;
-
-                TaiKhoan taiKhoan = new TaiKhoan();
-
-                taiKhoan.TenTK = txtTenTK.Text;
-                taiKhoan.MatKhau = txtMatKhau.Text;
-                taiKhoan.CCCDNV = nhanVien.CCCDNV;
-
-                // Cập nhật thông tin
-                DAONhanVien.SuaNhanVien(nhanVien);
-                DAOTaiKhoan.SuaTaiKhoan(taiKhoan);             
-                // Tải lại dữ liệu lên DataGridView
-                LoadData();
-                clearTextBox();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
-        }
 
         /*private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -116,6 +83,7 @@ namespace QLMuaBanXeMay.UC
             txtDiaChi.Clear();
             dtpNgaySinh.ResetText();
             txtChucVu.Clear();
+            txtLuongCoBan.Clear();
         }
 
         private void dgv_thongTinNV_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -137,6 +105,7 @@ namespace QLMuaBanXeMay.UC
 
                 txtTenTK.Text = row.Cells["TenTK"].Value.ToString();
                 txtMatKhau.Text = row.Cells["MatKhau"].Value.ToString();
+                txtLuongCoBan.Text = row.Cells["LuongCoBan"].Value.ToString();
             }
         }
 
@@ -160,7 +129,7 @@ namespace QLMuaBanXeMay.UC
                 nhanVien.DiaChi = txtDiaChi.Text;
                 nhanVien.Email = txtEmail.Text;
                 nhanVien.ChucVu = txtChucVu.Text;
-
+                nhanVien.LuongCoBan = int.Parse(txtLuongCoBan.Text);
                 TaiKhoan taiKhoan = new TaiKhoan();
 
                 taiKhoan.TenTK = txtTenTK.Text;
