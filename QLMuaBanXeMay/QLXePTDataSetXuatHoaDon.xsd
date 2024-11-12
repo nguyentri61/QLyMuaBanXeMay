@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLXePTDataSetXuatHoaDon" targetNamespace="http://tempuri.org/QLXePTDataSetXuatHoaDon.xsd" xmlns:mstns="http://tempuri.org/QLXePTDataSetXuatHoaDon.xsd" xmlns="http://tempuri.org/QLXePTDataSetXuatHoaDon.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLXePTConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLXePTConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLMuaBanXeMay.Properties.Settings.GlobalReference.Default.QLXePTConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_HoaDonLuongNhanVienTableAdapter" GeneratorDataComponentClassName="View_HoaDonLuongNhanVienTableAdapter" Name="View_HoaDonLuongNhanVien" UserDataComponentName="View_HoaDonLuongNhanVienTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLXePTConnectionString2 (Settings)" DbObjectName="QLXePT.dbo.View_HoaDonLuongNhanVien" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MaHDL, CCCDNV, TenNV, ChucVu, TGBatDau, TGKetThuc, SoGioLam, LuongCoBan, TongTien, NgayXuat FROM dbo.View_HoaDonLuongNhanVien</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaHDL" DataSetColumn="MaHDL" />
+              <Mapping SourceColumn="CCCDNV" DataSetColumn="CCCDNV" />
+              <Mapping SourceColumn="TenNV" DataSetColumn="TenNV" />
+              <Mapping SourceColumn="ChucVu" DataSetColumn="ChucVu" />
+              <Mapping SourceColumn="TGBatDau" DataSetColumn="TGBatDau" />
+              <Mapping SourceColumn="TGKetThuc" DataSetColumn="TGKetThuc" />
+              <Mapping SourceColumn="SoGioLam" DataSetColumn="SoGioLam" />
+              <Mapping SourceColumn="LuongCoBan" DataSetColumn="LuongCoBan" />
+              <Mapping SourceColumn="TongTien" DataSetColumn="TongTien" />
+              <Mapping SourceColumn="NgayXuat" DataSetColumn="NgayXuat" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLXePTDataSetXuatHoaDon" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLXePTDataSetXuatHoaDon" msprop:Generator_DataSetName="QLXePTDataSetXuatHoaDon">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_HoaDonLuongNhanVien" msprop:Generator_RowEvHandlerName="View_HoaDonLuongNhanVienRowChangeEventHandler" msprop:Generator_RowDeletedName="View_HoaDonLuongNhanVienRowDeleted" msprop:Generator_RowDeletingName="View_HoaDonLuongNhanVienRowDeleting" msprop:Generator_RowEvArgName="View_HoaDonLuongNhanVienRowChangeEvent" msprop:Generator_TablePropName="View_HoaDonLuongNhanVien" msprop:Generator_RowChangedName="View_HoaDonLuongNhanVienRowChanged" msprop:Generator_RowChangingName="View_HoaDonLuongNhanVienRowChanging" msprop:Generator_TableClassName="View_HoaDonLuongNhanVienDataTable" msprop:Generator_RowClassName="View_HoaDonLuongNhanVienRow" msprop:Generator_TableVarName="tableView_HoaDonLuongNhanVien" msprop:Generator_UserTableName="View_HoaDonLuongNhanVien">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaHDL" msprop:Generator_ColumnPropNameInRow="MaHDL" msprop:Generator_ColumnPropNameInTable="MaHDLColumn" msprop:Generator_ColumnVarNameInTable="columnMaHDL" msprop:Generator_UserColumnName="MaHDL" type="xs:int" />
+              <xs:element name="CCCDNV" msprop:Generator_ColumnPropNameInRow="CCCDNV" msprop:Generator_ColumnPropNameInTable="CCCDNVColumn" msprop:Generator_ColumnVarNameInTable="columnCCCDNV" msprop:Generator_UserColumnName="CCCDNV" type="xs:int" minOccurs="0" />
+              <xs:element name="TenNV" msprop:Generator_ColumnPropNameInRow="TenNV" msprop:Generator_ColumnPropNameInTable="TenNVColumn" msprop:Generator_ColumnVarNameInTable="columnTenNV" msprop:Generator_UserColumnName="TenNV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ChucVu" msprop:Generator_ColumnPropNameInRow="ChucVu" msprop:Generator_ColumnPropNameInTable="ChucVuColumn" msprop:Generator_ColumnVarNameInTable="columnChucVu" msprop:Generator_UserColumnName="ChucVu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TGBatDau" msprop:Generator_ColumnPropNameInRow="TGBatDau" msprop:Generator_ColumnPropNameInTable="TGBatDauColumn" msprop:Generator_ColumnVarNameInTable="columnTGBatDau" msprop:Generator_UserColumnName="TGBatDau" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TGKetThuc" msprop:Generator_ColumnPropNameInRow="TGKetThuc" msprop:Generator_ColumnPropNameInTable="TGKetThucColumn" msprop:Generator_ColumnVarNameInTable="columnTGKetThuc" msprop:Generator_UserColumnName="TGKetThuc" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SoGioLam" msprop:Generator_ColumnPropNameInRow="SoGioLam" msprop:Generator_ColumnPropNameInTable="SoGioLamColumn" msprop:Generator_ColumnVarNameInTable="columnSoGioLam" msprop:Generator_UserColumnName="SoGioLam" type="xs:double" minOccurs="0" />
+              <xs:element name="LuongCoBan" msprop:Generator_ColumnPropNameInRow="LuongCoBan" msprop:Generator_ColumnPropNameInTable="LuongCoBanColumn" msprop:Generator_ColumnVarNameInTable="columnLuongCoBan" msprop:Generator_UserColumnName="LuongCoBan" type="xs:int" minOccurs="0" />
+              <xs:element name="TongTien" msprop:Generator_ColumnPropNameInRow="TongTien" msprop:Generator_ColumnPropNameInTable="TongTienColumn" msprop:Generator_ColumnVarNameInTable="columnTongTien" msprop:Generator_UserColumnName="TongTien" type="xs:double" minOccurs="0" />
+              <xs:element name="NgayXuat" msprop:Generator_ColumnPropNameInRow="NgayXuat" msprop:Generator_ColumnPropNameInTable="NgayXuatColumn" msprop:Generator_ColumnVarNameInTable="columnNgayXuat" msprop:Generator_UserColumnName="NgayXuat" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_HoaDonLuongNhanVien" />
+      <xs:field xpath="mstns:MaHDL" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

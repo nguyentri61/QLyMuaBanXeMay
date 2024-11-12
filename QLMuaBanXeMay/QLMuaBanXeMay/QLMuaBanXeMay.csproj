@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLMuaBanXeMay</RootNamespace>
+    <AssemblyName>QLMuaBanXeMay</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\HoaDonChiTietPhuTung.cs" />
+    <Compile Include="Class\HoaDonPhuTung.cs" />
+    <Compile Include="Class\HoaDonXeMay.cs" />
+    <Compile Include="Class\KhachHang.cs" />
+    <Compile Include="Class\LoaiKH.cs" />
+    <Compile Include="Class\MY_DB.cs" />
+    <Compile Include="Class\NhanVien.cs" />
+    <Compile Include="Class\PhuTung.cs" />
+    <Compile Include="Class\TaiKhoan.cs" />
+    <Compile Include="DAO\DAOHoaDonPT.cs" />
+    <Compile Include="DAO\DAOHoaDonXe.cs" />
+    <Compile Include="DAO\DAOPhuTung.cs" />
+    <Compile Include="DAO\DAOThongTinKH.cs" />
+    <Compile Include="DAO\DAOXeMay.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\XeMay.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLMuaBanXeMayDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_HoaDonPT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_HoaDonPT.Designer.cs">
+      <DependentUpon>UC_HoaDonPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_HoaDonXee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_HoaDonXee.Designer.cs">
+      <DependentUpon>UC_HoaDonXee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_MainScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_MainScreen.Designer.cs">
+      <DependentUpon>UC_MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_QLPhuTung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_QLPhuTung.Designer.cs">
+      <DependentUpon>UC_QLPhuTung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_QLXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_QLXe.Designer.cs">
+      <DependentUpon>UC_QLXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_ThanhToanXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_ThanhToanXe.Designer.cs">
+      <DependentUpon>UC_ThanhToanXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_ThanhToanPT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_ThanhToanPT.Designer.cs">
+      <DependentUpon>UC_ThanhToanPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WF\Form_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_DangNhap.Designer.cs">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinKH.Designer.cs">
+      <DependentUpon>Form_ThongTinKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinPhuTung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinPhuTung.Designer.cs">
+      <DependentUpon>Form_ThongTinPhuTung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinXe.Designer.cs">
+      <DependentUpon>Form_ThongTinXe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UC\UC_HoaDonPT.resx">
+      <DependentUpon>UC_HoaDonPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_HoaDonXee.resx">
+      <DependentUpon>UC_HoaDonXee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_MainScreen.resx">
+      <DependentUpon>UC_MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_QLPhuTung.resx">
+      <DependentUpon>UC_QLPhuTung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_QLXe.resx">
+      <DependentUpon>UC_QLXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_ThanhToanXe.resx">
+      <DependentUpon>UC_ThanhToanXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_ThanhToanPT.resx">
+      <DependentUpon>UC_ThanhToanPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_DangNhap.resx">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_ThongTinKH.resx">
+      <DependentUpon>Form_ThongTinKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_ThongTinPhuTung.resx">
+      <DependentUpon>Form_ThongTinPhuTung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_ThongTinXe.resx">
+      <DependentUpon>Form_ThongTinXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLMuaBanXeMayDataSet.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLMuaBanXeMayDataSet1.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet1.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet2.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet2.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet3.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet3.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\form_main_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_main_employees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_main_guests.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_main_motobikes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_main_tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_main_bills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_main_bills_tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_main_users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_main_signout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motobike.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

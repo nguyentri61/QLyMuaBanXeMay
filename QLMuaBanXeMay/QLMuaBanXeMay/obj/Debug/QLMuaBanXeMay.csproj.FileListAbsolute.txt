@@ -1,0 +1,46 @@
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.AssemblyReference.cache
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.Form1.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.Properties.Resources.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_HoaDonPT.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_HoaDonXee.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_MainScreen.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLPhuTung.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLXe.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToan.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToanPT.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_DangNhap.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinKH.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinPhuTung.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinXe.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.GenerateResource.cache
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.CoreCompileInputs.cache
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.exe.config
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.exe
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.pdb
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\bin\Debug\Guna.UI2.dll
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.CopyComplete
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.exe
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.pdb
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.exe.config
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.exe
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.pdb
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\Guna.UI2.dll
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.AssemblyReference.cache
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.Form1.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.Properties.Resources.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_HoaDonPT.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_HoaDonXee.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_MainScreen.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLPhuTung.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLXe.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToanPT.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_DangNhap.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinKH.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinPhuTung.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinXe.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.GenerateResource.cache
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.CoreCompileInputs.cache
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.CopyComplete
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.exe
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.pdb
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToanXe.resources

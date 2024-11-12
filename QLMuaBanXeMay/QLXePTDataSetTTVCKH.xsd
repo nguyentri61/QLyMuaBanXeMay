@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLXePTDataSetTTVCKH" targetNamespace="http://tempuri.org/QLXePTDataSetTTVCKH.xsd" xmlns:mstns="http://tempuri.org/QLXePTDataSetTTVCKH.xsd" xmlns="http://tempuri.org/QLXePTDataSetTTVCKH.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLXePTConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLXePTConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLMuaBanXeMay.Properties.Settings.GlobalReference.Default.QLXePTConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_ThongTinVoucherKhachHangTableAdapter" GeneratorDataComponentClassName="View_ThongTinVoucherKhachHangTableAdapter" Name="View_ThongTinVoucherKhachHang" UserDataComponentName="View_ThongTinVoucherKhachHangTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLXePTConnectionString1 (Settings)" DbObjectName="QLXePT.dbo.View_ThongTinVoucherKhachHang" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CCCDKH, MaVC, TenVC, GiaTri, GiamGia, NgayHH, GiamGiaTD, NgayNhan FROM dbo.View_ThongTinVoucherKhachHang</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CCCDKH" DataSetColumn="CCCDKH" />
+              <Mapping SourceColumn="MaVC" DataSetColumn="MaVC" />
+              <Mapping SourceColumn="TenVC" DataSetColumn="TenVC" />
+              <Mapping SourceColumn="GiaTri" DataSetColumn="GiaTri" />
+              <Mapping SourceColumn="GiamGia" DataSetColumn="GiamGia" />
+              <Mapping SourceColumn="NgayHH" DataSetColumn="NgayHH" />
+              <Mapping SourceColumn="GiamGiaTD" DataSetColumn="GiamGiaTD" />
+              <Mapping SourceColumn="NgayNhan" DataSetColumn="NgayNhan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLXePTDataSetTTVCKH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLXePTDataSetTTVCKH" msprop:Generator_DataSetName="QLXePTDataSetTTVCKH">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_ThongTinVoucherKhachHang" msprop:Generator_RowEvHandlerName="View_ThongTinVoucherKhachHangRowChangeEventHandler" msprop:Generator_RowDeletedName="View_ThongTinVoucherKhachHangRowDeleted" msprop:Generator_RowDeletingName="View_ThongTinVoucherKhachHangRowDeleting" msprop:Generator_RowEvArgName="View_ThongTinVoucherKhachHangRowChangeEvent" msprop:Generator_TablePropName="View_ThongTinVoucherKhachHang" msprop:Generator_RowChangedName="View_ThongTinVoucherKhachHangRowChanged" msprop:Generator_RowChangingName="View_ThongTinVoucherKhachHangRowChanging" msprop:Generator_TableClassName="View_ThongTinVoucherKhachHangDataTable" msprop:Generator_RowClassName="View_ThongTinVoucherKhachHangRow" msprop:Generator_TableVarName="tableView_ThongTinVoucherKhachHang" msprop:Generator_UserTableName="View_ThongTinVoucherKhachHang">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CCCDKH" msprop:Generator_ColumnPropNameInRow="CCCDKH" msprop:Generator_ColumnPropNameInTable="CCCDKHColumn" msprop:Generator_ColumnVarNameInTable="columnCCCDKH" msprop:Generator_UserColumnName="CCCDKH" type="xs:int" />
+              <xs:element name="MaVC" msprop:Generator_ColumnPropNameInRow="MaVC" msprop:Generator_ColumnPropNameInTable="MaVCColumn" msprop:Generator_ColumnVarNameInTable="columnMaVC" msprop:Generator_UserColumnName="MaVC" type="xs:int" />
+              <xs:element name="TenVC" msprop:Generator_ColumnPropNameInRow="TenVC" msprop:Generator_ColumnPropNameInTable="TenVCColumn" msprop:Generator_ColumnVarNameInTable="columnTenVC" msprop:Generator_UserColumnName="TenVC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GiaTri" msprop:Generator_ColumnPropNameInRow="GiaTri" msprop:Generator_ColumnPropNameInTable="GiaTriColumn" msprop:Generator_ColumnVarNameInTable="columnGiaTri" msprop:Generator_UserColumnName="GiaTri" type="xs:double" minOccurs="0" />
+              <xs:element name="GiamGia" msprop:Generator_ColumnPropNameInRow="GiamGia" msprop:Generator_ColumnPropNameInTable="GiamGiaColumn" msprop:Generator_ColumnVarNameInTable="columnGiamGia" msprop:Generator_UserColumnName="GiamGia" type="xs:double" minOccurs="0" />
+              <xs:element name="NgayHH" msprop:Generator_ColumnPropNameInRow="NgayHH" msprop:Generator_ColumnPropNameInTable="NgayHHColumn" msprop:Generator_ColumnVarNameInTable="columnNgayHH" msprop:Generator_UserColumnName="NgayHH" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GiamGiaTD" msprop:Generator_ColumnPropNameInRow="GiamGiaTD" msprop:Generator_ColumnPropNameInTable="GiamGiaTDColumn" msprop:Generator_ColumnVarNameInTable="columnGiamGiaTD" msprop:Generator_UserColumnName="GiamGiaTD" type="xs:double" minOccurs="0" />
+              <xs:element name="NgayNhan" msprop:Generator_ColumnPropNameInRow="NgayNhan" msprop:Generator_ColumnPropNameInTable="NgayNhanColumn" msprop:Generator_ColumnVarNameInTable="columnNgayNhan" msprop:Generator_UserColumnName="NgayNhan" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
