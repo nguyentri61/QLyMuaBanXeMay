@@ -44,6 +44,7 @@ namespace QLMuaBanXeMay.WF
                             string email=reader.GetString(6);
                             string chucVu = reader.GetString(7);
                             int luongCoBan = reader.GetInt32(8);
+
                             //if (chucVu != "Quản Lý")
                             //{
                             //    DangNhap.username = txt_taikhoan.Text;
@@ -54,6 +55,7 @@ namespace QLMuaBanXeMay.WF
                             //{
                             //    MY_DB.setConnectionQL();
                             //}
+
 
                             NhanVien nhanVien = new NhanVien(cccdNV,tenNV,ngaySinh,gioiTinh,sdt,diaChi,email,chucVu, luongCoBan);
                             Form1 form1 = new Form1(nhanVien);

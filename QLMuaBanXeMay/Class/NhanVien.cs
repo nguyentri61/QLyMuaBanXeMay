@@ -20,6 +20,7 @@ namespace QLMuaBanXeMay.Class
         private string chucVu;
         private int luongCoBan;
 
+
         public NhanVien() { }
         public NhanVien(int ccCDNV, string tenNV, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, string email, string chucVu, int luongCoBan)
         {

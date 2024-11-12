@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
 using System.Windows.Forms;
 
 namespace QLMuaBanXeMay
@@ -21,6 +22,7 @@ namespace QLMuaBanXeMay
             InitializeComponent();
             NhanVien=nhanvien;
             loadRole();
+
         }
         private void loadRole()
         {
@@ -147,6 +149,11 @@ namespace QLMuaBanXeMay
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.1.0\lib\net472\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -269,6 +272,12 @@
     <Compile Include="UC\UC_ThongKeTheoThang.Designer.cs">
       <DependentUpon>UC_ThongKeTheoThang.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\UC_ThongKeXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_ThongKeXe.Designer.cs">
+      <DependentUpon>UC_ThongKeXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="WF\Form_ChiTietHoaDonLuong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -404,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_ThongKeTheoThang.resx">
       <DependentUpon>UC_ThongKeTheoThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_ThongKeXe.resx">
+      <DependentUpon>UC_ThongKeXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_ChiTietHoaDonLuong.resx">
       <DependentUpon>Form_ChiTietHoaDonLuong.cs</DependentUpon>

@@ -50,8 +50,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+
             this.txtLuongCoBan = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
+
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -396,6 +398,7 @@
             this.label5.TabIndex = 61;
             this.label5.Text = "CCCD:";
             // 
+
             // txtLuongCoBan
             // 
             this.txtLuongCoBan.Cursor = System.Windows.Forms.Cursors.IBeam;

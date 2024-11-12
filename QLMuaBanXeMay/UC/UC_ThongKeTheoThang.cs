@@ -67,8 +67,7 @@ namespace QLMuaBanXeMay.UC
             chartThongKeTheoThang.ChartAreas[0].AxisX.Title = "Tháng";  // Label the X-axis
             chartThongKeTheoThang.ChartAreas[0].AxisY.Title = "Doanh thu (VND)";  // Label the Y-axis
             chartThongKeTheoThang.ChartAreas[0].AxisX.Interval = 1;  // Ensure all months are shown on the axis
-            chartThongKeTheoThang.ChartAreas[0].AxisY.LabelStyle.Format = "{0:C0}";  // Format Y-axis as currency
- 
+            chartThongKeTheoThang.ChartAreas[0].AxisY.LabelStyle.Format = "{0:N0} VND";
         }
 
         private void cbbNam_SelectedIndexChanged(object sender, EventArgs e)
