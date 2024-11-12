@@ -18,9 +18,10 @@ namespace QLMuaBanXeMay.Class
         private string diaChi;
         private string email;
         private string chucVu;
+        private int luongCoBan;
 
         public NhanVien() { }
-        public NhanVien(int ccCDNV, string tenNV, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, string email, string chucVu)
+        public NhanVien(int ccCDNV, string tenNV, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, string email, string chucVu, int luongCoBan)
         {
             this.ccCDNV = ccCDNV;
             this.tenNV = tenNV;
@@ -30,6 +31,7 @@ namespace QLMuaBanXeMay.Class
             this.diaChi = diaChi;
             this.email = email;
             this.chucVu = chucVu;
+            this.LuongCoBan = luongCoBan;
         }
 
         public int CCCDNV
@@ -79,6 +81,8 @@ namespace QLMuaBanXeMay.Class
             get { return chucVu; }
             set { chucVu = value; }
         }
+
+        public int LuongCoBan { get => luongCoBan; set => luongCoBan = value; }
     }
 
 }

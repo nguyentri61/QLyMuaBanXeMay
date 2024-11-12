@@ -20,7 +20,7 @@ namespace QLMuaBanXeMay.Class
         //static SqlConnection con = new SqlConnection(@"Data Source=HONGSON;Initial Catalog=QLXePT;Integrated Security=True");
 
        
-        static String connQL = @"Data Source=MINHTRI\SQLEXPRESS;Initial Catalog=QLXePT;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        static String connQL = @"Data Source=MINHTRI\SQLEXPRESS;Initial Catalog=QLXePT;Integrated Security=True;TrustServerCertificate=True";
 
         static SqlConnection con = new SqlConnection(connQL);
 

@@ -28,6 +28,7 @@ namespace QLMuaBanXeMay.DAO
                     command.Parameters.AddWithValue("@DiaChi", nhanVien.DiaChi);
                     command.Parameters.AddWithValue("@Email", nhanVien.Email);
                     command.Parameters.AddWithValue("@ChucVu", nhanVien.ChucVu);
+                    command.Parameters.AddWithValue("@LuongCoBan", nhanVien.LuongCoBan);
 
                     MY_DB.openConnection();
                     command.ExecuteNonQuery();
@@ -130,6 +131,7 @@ namespace QLMuaBanXeMay.DAO
                     command.Parameters.AddWithValue("@DiaChi", nhanVien.DiaChi);
                     command.Parameters.AddWithValue("@Email", nhanVien.Email);
                     command.Parameters.AddWithValue("@ChucVu", nhanVien.ChucVu);
+                    command.Parameters.AddWithValue("@LuongCoBan", nhanVien.LuongCoBan);
 
                     MY_DB.openConnection();
                     command.ExecuteNonQuery();
