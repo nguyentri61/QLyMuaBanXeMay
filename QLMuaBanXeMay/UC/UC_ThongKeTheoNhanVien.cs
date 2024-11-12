@@ -65,7 +65,7 @@ namespace QLMuaBanXeMay.UC
             chartTKTheoNV.ChartAreas[0].AxisX.Title = "Nhân viên";  // Đặt tên cho trục X
             chartTKTheoNV.ChartAreas[0].AxisY.Title = "Doanh thu (VND)";  // Đặt tên cho trục Y
             chartTKTheoNV.ChartAreas[0].AxisX.Interval = 1;  // Đảm bảo hiển thị tất cả tên nhân viên
-            chartTKTheoNV.ChartAreas[0].AxisY.LabelStyle.Format = "{0:C0}";
+            chartTKTheoNV.ChartAreas[0].AxisY.LabelStyle.Format = "{0:N0} VND";
         }
 
         private void cbbThang_SelectedIndexChanged(object sender, EventArgs e)

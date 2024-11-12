@@ -20,6 +20,7 @@ namespace QLMuaBanXeMay.UC
         Class.KhachHang khachHang_tt = new KhachHang();
         NhanVien user;
         int mavc=-1;
+
         public UC_ThanhToanXe()
         {
             InitializeComponent();
@@ -82,6 +83,12 @@ namespace QLMuaBanXeMay.UC
                 khachHang_tt = kh.KhachHang1;
                 UC_ThanhToanXe_Load(xeMay_tt, khachHang_tt);
                 LoadCBB(khachHang_tt.CCCDKH);
+                
+                int a = -2;
+                a = DAOVoucher.GetOptimalVoucher(khachHang_tt.CCCDKH, xeMay_tt.DonGia);
+                MessageBox.Show(a.ToString());
+                cb_VC.SelectedValue = a;
+
             }
            
         }
@@ -124,7 +131,10 @@ namespace QLMuaBanXeMay.UC
                 DAO.DAOHoaDonXe.ThemHoaDonXe(hoaDonXe);
                 MessageBox.Show("Xuất hóa đơn thành công");
 
-                
+                UC_HoaDonXee uc = new UC_HoaDonXee(user);
+                this.Controls.Clear();
+                this.Controls.Add(uc);
+
             }
             catch
             {
@@ -189,6 +199,11 @@ namespace QLMuaBanXeMay.UC
         private void cb_VC_SelectedValueChanged(object sender, EventArgs e)
         {
 
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

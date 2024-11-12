@@ -25,6 +25,7 @@ namespace QLMuaBanXeMay.UC
         Class.KhachHang khachHang_tt = new KhachHang();
         NhanVien user;
         List<ChiTietHD_PT> ListHDPT = new List<ChiTietHD_PT>();
+
         public UC_ThanhToanPT()
         {
             
@@ -73,7 +74,10 @@ namespace QLMuaBanXeMay.UC
         {
             DAOVoucher.XoaVoucher(maHDPT,maVC);
             DAOHoaDonPT.SuaTongTienHDPT(maHDPT, txt_thanhTien.Text,cb_pttt.Text);
-            
+
+            UC_HoaDonPT uc = new UC_HoaDonPT(user);
+            this.Controls.Clear();
+            this.Controls.Add(uc);
         }
         private void LoadCBB(int cccd)
         {
@@ -136,6 +140,11 @@ namespace QLMuaBanXeMay.UC
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

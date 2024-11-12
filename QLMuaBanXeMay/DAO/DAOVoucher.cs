@@ -85,6 +85,31 @@ namespace QLMuaBanXeMay.DAO
                 }
             }
         }
+        public static int GetOptimalVoucher(int cccdKH, double donGiaXe)
+        {
+            int maVC = -1;
+
+            using (SqlCommand command = new SqlCommand("SELECT dbo.GetVoucherToiUu(@CCCDKH, @DonGiaXe)", MY_DB.getConnection()))
+            {
+                try
+                {
+                    MY_DB.openConnection();
+                    command.Parameters.AddWithValue("@CCCDKH", cccdKH);
+                    command.Parameters.AddWithValue("@DonGiaXe", donGiaXe);
+                    object result = command.ExecuteScalar();
+                    if (result != null && result != DBNull.Value)
+                    {
+                        maVC = Convert.ToInt32(result);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
+
+            return maVC;
+        }
         public static DataTable LayThongTinVC(int cccd)
         {
             using (SqlCommand command = new SqlCommand("SELECT * FROM GetVouchersByCustomer(@CCCD)", MY_DB.getConnection()))
