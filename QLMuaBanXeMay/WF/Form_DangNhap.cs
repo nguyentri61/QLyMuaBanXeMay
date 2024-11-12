@@ -45,7 +45,6 @@ namespace QLMuaBanXeMay.WF
                             string chucVu = reader.GetString(7);
                             int luongCoBan = reader.GetInt32(8);
 
-
                             //if (chucVu != "Quản Lý")
                             //{
                             //    DangNhap.username = txt_taikhoan.Text;

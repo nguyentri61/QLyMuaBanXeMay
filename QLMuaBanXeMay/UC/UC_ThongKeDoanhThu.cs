@@ -18,20 +18,29 @@ namespace QLMuaBanXeMay.UC
             InitializeComponent();
         }
 
+        private void addUC(UserControl uc)
+        {
+            uc.Dock = DockStyle.Fill;
+            panelDoanhThu.Controls.Clear();
+            panelDoanhThu.Controls.Add(uc);
+            uc.BringToFront();
+        }
+
         private void btnTKTheoNV_Click(object sender, EventArgs e)
         {
             UC_ThongKeTheoNhanVien uc = new UC_ThongKeTheoNhanVien();
-            panelDoanhThu.Controls.Clear();
-            panelDoanhThu.Controls.Add(uc);
-            uc.Dock = DockStyle.Fill;
+            addUC(uc);
         }
 
         private void btnTKTheoThang_Click(object sender, EventArgs e)
         {
             UC_ThongKeTheoThang uc = new UC_ThongKeTheoThang();
-            panelDoanhThu.Controls.Clear();
-            panelDoanhThu.Controls.Add(uc);
-            uc.Dock = DockStyle.Fill;
+            addUC(uc);
+        }
+
+        private void panelDoanhThu_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
