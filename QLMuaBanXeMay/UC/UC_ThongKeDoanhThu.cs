@@ -42,5 +42,11 @@ namespace QLMuaBanXeMay.UC
         {
 
         }
+
+        private void btnTK_DTLN_Click(object sender, EventArgs e)
+        {
+            UC_ThongKeLoiNhuan uc=new UC_ThongKeLoiNhuan();
+            addUC(uc);
+        }
     }
 }

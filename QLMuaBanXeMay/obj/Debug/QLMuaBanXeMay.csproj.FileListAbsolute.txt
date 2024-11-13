@@ -3,7 +3,16 @@ D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.pdb
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\Guna.Charts.WinForms.dll
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\Guna.UI2.dll
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\LiveCharts.dll
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\LiveCharts.WinForms.dll
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\LiveCharts.Wpf.dll
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\Guna.Charts.WinForms.xml
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\LiveCharts.pdb
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\LiveCharts.xml
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\LiveCharts.WinForms.pdb
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\LiveCharts.WinForms.xml
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\LiveCharts.Wpf.pdb
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\bin\Debug\LiveCharts.Wpf.xml
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.AssemblyReference.cache
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.Form1.resources
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.Properties.Resources.resources
@@ -20,6 +29,7 @@ D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToanXe.resources
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToanPT.resources
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThongKeDoanhThu.resources
+D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThongKeLoiNhuan.resources
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThongKeTheoNhanVien.resources
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThongKeTheoThang.resources
 D:\HK1_24-25\DBMS\DoAn1211\QLyMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ChiTietHoaDonLuong.resources
