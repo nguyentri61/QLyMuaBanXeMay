@@ -32,12 +32,14 @@
             this.btnTKTheoThang = new Guna.UI2.WinForms.Guna2Button();
             this.btnTKTheoNV = new Guna.UI2.WinForms.Guna2Button();
             this.panelDoanhThu = new System.Windows.Forms.Panel();
+            this.btnTK_DTLN = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnTK_DTLN);
             this.panel1.Controls.Add(this.btnTKTheoThang);
             this.panel1.Controls.Add(this.btnTKTheoNV);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -103,6 +105,30 @@
             this.panelDoanhThu.TabIndex = 1;
             this.panelDoanhThu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDoanhThu_Paint);
             // 
+            // btnTK_DTLN
+            // 
+            this.btnTK_DTLN.Animated = true;
+            this.btnTK_DTLN.BackColor = System.Drawing.Color.White;
+            this.btnTK_DTLN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTK_DTLN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnTK_DTLN.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTK_DTLN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTK_DTLN.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.btnTK_DTLN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTK_DTLN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTK_DTLN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTK_DTLN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTK_DTLN.FillColor = System.Drawing.Color.White;
+            this.btnTK_DTLN.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTK_DTLN.ForeColor = System.Drawing.Color.Black;
+            this.btnTK_DTLN.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTK_DTLN.Location = new System.Drawing.Point(577, -1);
+            this.btnTK_DTLN.Name = "btnTK_DTLN";
+            this.btnTK_DTLN.Size = new System.Drawing.Size(306, 53);
+            this.btnTK_DTLN.TabIndex = 2;
+            this.btnTK_DTLN.Text = "Thống kê doanh thu và lợi nhuận";
+            this.btnTK_DTLN.Click += new System.EventHandler(this.btnTK_DTLN_Click);
+            // 
             // UC_ThongKeDoanhThu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -121,5 +147,6 @@
         private Guna.UI2.WinForms.Guna2Button btnTKTheoNV;
         private System.Windows.Forms.Panel panelDoanhThu;
         private Guna.UI2.WinForms.Guna2Button btnTKTheoThang;
+        private Guna.UI2.WinForms.Guna2Button btnTK_DTLN;
     }
 }
