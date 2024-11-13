@@ -272,12 +272,6 @@
     <Compile Include="UC\UC_ThongKeTheoThang.Designer.cs">
       <DependentUpon>UC_ThongKeTheoThang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC\UC_ThongKeXe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\UC_ThongKeXe.Designer.cs">
-      <DependentUpon>UC_ThongKeXe.cs</DependentUpon>
-    </Compile>
     <Compile Include="WF\Form_ChiTietHoaDonLuong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -413,9 +407,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_ThongKeTheoThang.resx">
       <DependentUpon>UC_ThongKeTheoThang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\UC_ThongKeXe.resx">
-      <DependentUpon>UC_ThongKeXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_ChiTietHoaDonLuong.resx">
       <DependentUpon>Form_ChiTietHoaDonLuong.cs</DependentUpon>
