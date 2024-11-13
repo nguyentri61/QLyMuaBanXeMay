@@ -29,66 +29,79 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelDoanhThu = new System.Windows.Forms.Panel();
-            this.btnTKTheoNV = new Guna.UI2.WinForms.Guna2Button();
             this.btnTKTheoThang = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTKTheoNV = new Guna.UI2.WinForms.Guna2Button();
+            this.panelDoanhThu = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnTKTheoThang);
             this.panel1.Controls.Add(this.btnTKTheoNV);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 43);
+            this.panel1.Size = new System.Drawing.Size(1300, 53);
             this.panel1.TabIndex = 0;
-            // 
-            // panelDoanhThu
-            // 
-            this.panelDoanhThu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDoanhThu.Location = new System.Drawing.Point(0, 43);
-            this.panelDoanhThu.Name = "panelDoanhThu";
-            this.panelDoanhThu.Size = new System.Drawing.Size(1300, 757);
-            this.panelDoanhThu.TabIndex = 1;
-            // 
-            // btnTKTheoNV
-            // 
-            this.btnTKTheoNV.Animated = true;
-            this.btnTKTheoNV.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTKTheoNV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTKTheoNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTKTheoNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTKTheoNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTKTheoNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTKTheoNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTKTheoNV.ForeColor = System.Drawing.Color.White;
-            this.btnTKTheoNV.Location = new System.Drawing.Point(3, 0);
-            this.btnTKTheoNV.Name = "btnTKTheoNV";
-            this.btnTKTheoNV.Size = new System.Drawing.Size(203, 43);
-            this.btnTKTheoNV.TabIndex = 0;
-            this.btnTKTheoNV.Text = "Thống kê theo Nhân Viên";
-            this.btnTKTheoNV.Click += new System.EventHandler(this.btnTKTheoNV_Click);
             // 
             // btnTKTheoThang
             // 
             this.btnTKTheoThang.Animated = true;
-            this.btnTKTheoThang.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnTKTheoThang.BackColor = System.Drawing.Color.White;
+            this.btnTKTheoThang.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTKTheoThang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnTKTheoThang.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnTKTheoThang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTKTheoThang.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.btnTKTheoThang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTKTheoThang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTKTheoThang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTKTheoThang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTKTheoThang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTKTheoThang.ForeColor = System.Drawing.Color.White;
-            this.btnTKTheoThang.Location = new System.Drawing.Point(207, 0);
+            this.btnTKTheoThang.FillColor = System.Drawing.Color.White;
+            this.btnTKTheoThang.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTKTheoThang.ForeColor = System.Drawing.Color.Black;
+            this.btnTKTheoThang.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTKTheoThang.Location = new System.Drawing.Point(298, -1);
             this.btnTKTheoThang.Name = "btnTKTheoThang";
-            this.btnTKTheoThang.Size = new System.Drawing.Size(180, 43);
+            this.btnTKTheoThang.Size = new System.Drawing.Size(271, 53);
             this.btnTKTheoThang.TabIndex = 1;
             this.btnTKTheoThang.Text = "Thống kê theo tháng";
             this.btnTKTheoThang.Click += new System.EventHandler(this.btnTKTheoThang_Click);
+            // 
+            // btnTKTheoNV
+            // 
+            this.btnTKTheoNV.Animated = true;
+            this.btnTKTheoNV.BackColor = System.Drawing.Color.White;
+            this.btnTKTheoNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTKTheoNV.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnTKTheoNV.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTKTheoNV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTKTheoNV.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.btnTKTheoNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTKTheoNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTKTheoNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTKTheoNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTKTheoNV.FillColor = System.Drawing.Color.White;
+            this.btnTKTheoNV.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTKTheoNV.ForeColor = System.Drawing.Color.Black;
+            this.btnTKTheoNV.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTKTheoNV.Location = new System.Drawing.Point(16, -1);
+            this.btnTKTheoNV.Name = "btnTKTheoNV";
+            this.btnTKTheoNV.Size = new System.Drawing.Size(276, 53);
+            this.btnTKTheoNV.TabIndex = 0;
+            this.btnTKTheoNV.Text = "Thống kê theo Nhân Viên";
+            this.btnTKTheoNV.Click += new System.EventHandler(this.btnTKTheoNV_Click);
+            // 
+            // panelDoanhThu
+            // 
+            this.panelDoanhThu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDoanhThu.Location = new System.Drawing.Point(0, 53);
+            this.panelDoanhThu.Name = "panelDoanhThu";
+            this.panelDoanhThu.Size = new System.Drawing.Size(1300, 747);
+            this.panelDoanhThu.TabIndex = 1;
+            this.panelDoanhThu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDoanhThu_Paint);
             // 
             // UC_ThongKeDoanhThu
             // 

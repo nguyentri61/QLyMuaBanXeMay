@@ -1,4 +1,5 @@
 ﻿using QLMuaBanXeMay.Class;
+using QLMuaBanXeMay.DAO;
 using QLMuaBanXeMay.UC;
 using QLMuaBanXeMay.WF;
 using System;
@@ -17,11 +18,13 @@ namespace QLMuaBanXeMay
     public partial class Form1 : Form
     {
         NhanVien NhanVien;
+
         public Form1(NhanVien nhanvien)
         {
             InitializeComponent();
             NhanVien=nhanvien;
             loadRole();
+            
 
         }
         private void loadRole()
@@ -32,14 +35,20 @@ namespace QLMuaBanXeMay
                 btnBillTool.Visible = false;
                 btnTool.Visible = false;
                 btn_QLVoucher.Visible = false;
-                
                 btnEmployee.Visible = false;
-            }else if(NhanVien.ChucVu== "Kỹ Thuật")
+                btn_calam.Visible = false;
+                btnThongKe.Visible = false;
+                btnHoaDonLuong.Visible = false;
+            }
+            else if(NhanVien.ChucVu== "Kỹ Thuật")
             {
                 btnBillBike.Visible = false;
                 btnMotobike.Visible = false;
                 btnEmployee.Visible = false;
                 btn_QLVoucher.Visible= false;
+                btn_calam.Visible = false;
+                btnThongKe.Visible = false;
+                btnHoaDonLuong.Visible = false;
             }
             
         }

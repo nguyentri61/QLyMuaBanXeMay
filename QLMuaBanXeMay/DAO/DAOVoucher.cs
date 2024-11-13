@@ -13,6 +13,7 @@ namespace QLMuaBanXeMay.DAO
 {
     internal class DAOVoucher
     {
+        
         public static DataTable Load_ViewVC()
         {
             using (SqlCommand command = new SqlCommand("SELECT * FROM Voucher;", MY_DB.getConnection()))
@@ -72,6 +73,26 @@ namespace QLMuaBanXeMay.DAO
                     command.Parameters.AddWithValue("@GiamGia", vc.Giamgia);
                     command.Parameters.AddWithValue("@NgayHH", vc.NgayHH);
                     command.Parameters.AddWithValue("@GiamGiaTD", vc.GgToida);
+
+                    MY_DB.openConnection();
+
+                    command.ExecuteNonQuery();
+
+                    MY_DB.closeConnection();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
+        }
+        internal static void XoaVoucherHH()
+        {
+            using (SqlCommand command = new SqlCommand("XoaVoucherHetHan", MY_DB.getConnection()))
+            {
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
                     MY_DB.openConnection();
 
