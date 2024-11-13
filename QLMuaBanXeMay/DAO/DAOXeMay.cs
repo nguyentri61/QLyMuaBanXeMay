@@ -18,7 +18,6 @@ namespace QLMuaBanXeMay.DAO
             string sql;
             if (chucvu == "Bán Hàng") 
             {
-                MessageBox.Show("11111");
                 sql = "SELECT * FROM dbo.GetAllXeBanHang()";
             }
             else 
