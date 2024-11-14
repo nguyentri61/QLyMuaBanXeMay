@@ -30,7 +30,6 @@ namespace QLMuaBanXeMay.DAO
 
         public static void ThemHoaDonluong(HoaDonLuong hoaDonLuong)
         {
-            MessageBox.Show(hoaDonLuong.NgayXuat.ToString());
             using (SqlCommand command = new SqlCommand("AddHoaDonLuong", MY_DB.getConnection()))
             {
                 try

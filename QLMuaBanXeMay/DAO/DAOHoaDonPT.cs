@@ -108,7 +108,6 @@ namespace QLMuaBanXeMay.DAO
                     command.Parameters.AddWithValue("@MaHDPT", maHDPT);
                     command.Parameters.AddWithValue("@ThanhTien", thanhtien);
                     command.Parameters.AddWithValue("@PTTT", pttt);
-                    MessageBox.Show("Test");
                     MY_DB.openConnection();
 
                     command.ExecuteNonQuery();

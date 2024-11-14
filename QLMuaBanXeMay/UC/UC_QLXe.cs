@@ -36,11 +36,8 @@ namespace QLMuaBanXeMay
         }
         private void loadRole()
         {
-            if (user.ChucVu == "Quản Lý")
-            {
-                xuathoadon_btn.Visible = false;
-            }
-            else if (user.ChucVu == "Bán Hàng")
+         
+             if (user.ChucVu == "Bán Hàng")
             {
                 btn_Update.Visible = false;
                 grBox_Congcu.Visible = false;
@@ -137,7 +134,7 @@ namespace QLMuaBanXeMay
 
         private void xuathoadon_btn_Click(object sender, EventArgs e)
         {
-            if (check)
+            if (check && xeMay.TinhTrang=="Đang bán")
             {
                 UC_ThanhToanXe uc = new UC_ThanhToanXe(xeMay, khachHang, user);
                 this.Controls.Clear();

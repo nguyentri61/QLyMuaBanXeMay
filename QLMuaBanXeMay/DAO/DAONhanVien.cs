@@ -92,7 +92,6 @@ namespace QLMuaBanXeMay.DAO
 
         public static DataTable LoadThongTinNhanVienCaLamHoaDon(int cccdNV)
         {
-            MessageBox.Show(cccdNV.ToString());
             using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetThongTinCaNhanVien(@CCCDNV)", MY_DB.getConnection()))
             {
                 try

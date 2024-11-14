@@ -39,12 +39,7 @@ namespace QLMuaBanXeMay
         }
         private void loadRole()
         {
-            if (user.ChucVu == "Quản Lý")
-            {
-                btn_Add.Visible = false;
-                btn_xuat.Visible = false;
-            }
-            else if (user.ChucVu == "Kỹ Thuật")
+            if (user.ChucVu == "Kỹ Thuật")
             {
                 btn_Update.Visible = false;
                 grBox_Congcu.Visible = false;
@@ -113,9 +108,16 @@ namespace QLMuaBanXeMay
 
         private void capnhat_btn_Click(object sender, EventArgs e)
         {
-            UC_ThanhToanPT uc = new UC_ThanhToanPT(listHDPT, khachHang, user);
-            this.Controls.Clear();
-            this.Controls.Add(uc);
+            if (phuTung.SoLuongTon > 0)
+            {
+                UC_ThanhToanPT uc = new UC_ThanhToanPT(listHDPT, khachHang, user);
+                this.Controls.Clear();
+                this.Controls.Add(uc);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn lại phụ tùng khác");
+            }
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
