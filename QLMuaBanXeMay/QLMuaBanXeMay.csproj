@@ -171,6 +171,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLXePTDataSetChonNVLuong.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLXePTDataSetDTTheoNV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLXePTDataSetDTTheoNV.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QLXePTDataSetHoaDonLuong.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -624,6 +629,17 @@
     </None>
     <None Include="QLXePTDataSetChonNVLuong.xss">
       <DependentUpon>QLXePTDataSetChonNVLuong.xsd</DependentUpon>
+    </None>
+    <None Include="QLXePTDataSetDTTheoNV.xsc">
+      <DependentUpon>QLXePTDataSetDTTheoNV.xsd</DependentUpon>
+    </None>
+    <None Include="QLXePTDataSetDTTheoNV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLXePTDataSetDTTheoNV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLXePTDataSetDTTheoNV.xss">
+      <DependentUpon>QLXePTDataSetDTTheoNV.xsd</DependentUpon>
     </None>
     <None Include="QLXePTDataSetHoaDonLuong.xsc">
       <DependentUpon>QLXePTDataSetHoaDonLuong.xsd</DependentUpon>

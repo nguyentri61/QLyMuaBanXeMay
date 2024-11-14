@@ -63,6 +63,7 @@ namespace QLMuaBanXeMay.DAO
                 }
             }
         }
+
         public static DataTable getChartData(DateTime startDate, DateTime endDate)
         {
             using (SqlCommand command = new SqlCommand("tinhToanLoiNhuanDoanhThu", MY_DB.getConnection()))
