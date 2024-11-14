@@ -13,18 +13,18 @@ namespace QLMuaBanXeMay.DAO
 {
     internal class DAOVoucher
     {
+        
         public static DataTable Load_ViewVC()
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM Voucher;", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("Select * from dbo.GetAllVoucher()", MY_DB.getConnection()))
             {
                 try
                 {
-                    MY_DB.openConnection();
 
+                    MY_DB.openConnection();
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
-
                     MY_DB.closeConnection();
 
                     return dt;
@@ -85,9 +85,29 @@ namespace QLMuaBanXeMay.DAO
                 }
             }
         }
+        internal static void XoaVoucherHH()
+        {
+            using (SqlCommand command = new SqlCommand("XoaVoucherHetHan", MY_DB.getConnection()))
+            {
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    MY_DB.openConnection();
+
+                    command.ExecuteNonQuery();
+
+                    MY_DB.closeConnection();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
+        }
         public static int GetOptimalVoucher(int cccdKH, double donGiaXe)
         {
-            int maVC = -1;
+            int maVC = 0;
 
             using (SqlCommand command = new SqlCommand("SELECT dbo.GetVoucherToiUu(@CCCDKH, @DonGiaXe)", MY_DB.getConnection()))
             {

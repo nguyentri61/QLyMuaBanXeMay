@@ -1,4 +1,5 @@
 ﻿using QLMuaBanXeMay.Class;
+using QLMuaBanXeMay.DAO;
 using QLMuaBanXeMay.UC;
 using QLMuaBanXeMay.WF;
 using System;
@@ -17,11 +18,13 @@ namespace QLMuaBanXeMay
     public partial class Form1 : Form
     {
         NhanVien NhanVien;
+
         public Form1(NhanVien nhanvien)
         {
             InitializeComponent();
             NhanVien=nhanvien;
             loadRole();
+            
 
         }
         private void loadRole()

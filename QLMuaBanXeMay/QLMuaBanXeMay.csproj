@@ -171,6 +171,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLXePTDataSetChonNVLuong.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLXePTDataSetDTTheoNV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLXePTDataSetDTTheoNV.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QLXePTDataSetHoaDonLuong.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -291,12 +296,6 @@
     </Compile>
     <Compile Include="UC\UC_ThongKeTheoThang.Designer.cs">
       <DependentUpon>UC_ThongKeTheoThang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\UC_ThongKeXe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\UC_ThongKeXe.Designer.cs">
-      <DependentUpon>UC_ThongKeXe.cs</DependentUpon>
     </Compile>
     <Compile Include="WF\Form_ChiTietHoaDonLuong.cs">
       <SubType>Form</SubType>
@@ -436,9 +435,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_ThongKeTheoThang.resx">
       <DependentUpon>UC_ThongKeTheoThang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\UC_ThongKeXe.resx">
-      <DependentUpon>UC_ThongKeXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_ChiTietHoaDonLuong.resx">
       <DependentUpon>Form_ChiTietHoaDonLuong.cs</DependentUpon>
@@ -633,6 +629,17 @@
     </None>
     <None Include="QLXePTDataSetChonNVLuong.xss">
       <DependentUpon>QLXePTDataSetChonNVLuong.xsd</DependentUpon>
+    </None>
+    <None Include="QLXePTDataSetDTTheoNV.xsc">
+      <DependentUpon>QLXePTDataSetDTTheoNV.xsd</DependentUpon>
+    </None>
+    <None Include="QLXePTDataSetDTTheoNV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLXePTDataSetDTTheoNV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLXePTDataSetDTTheoNV.xss">
+      <DependentUpon>QLXePTDataSetDTTheoNV.xsd</DependentUpon>
     </None>
     <None Include="QLXePTDataSetHoaDonLuong.xsc">
       <DependentUpon>QLXePTDataSetHoaDonLuong.xsd</DependentUpon>

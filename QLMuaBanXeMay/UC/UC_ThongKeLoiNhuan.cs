@@ -22,6 +22,7 @@ namespace QLMuaBanXeMay.UC
             InitializeComponent();
             UC_ThongKeLoiNhuan_LoadBD();
 
+
         }
         private void UC_ThongKeLoiNhuan_LoadBD()
         {

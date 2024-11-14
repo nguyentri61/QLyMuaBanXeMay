@@ -62,6 +62,11 @@ namespace QLMuaBanXeMay.UC
             }
             LoadCBB(khachHang_tt.CCCDKH);
 
+            int a = -2;
+            a = DAOVoucher.GetOptimalVoucher(khachHang_tt.CCCDKH, Double.Parse(txt_thanhTien.Text));
+            MessageBox.Show(a.ToString());
+            cb_VC.SelectedValue = a;
+
         }
 
         private void txt_cccdKH_TextChanged(object sender, EventArgs e)
@@ -73,7 +78,7 @@ namespace QLMuaBanXeMay.UC
         private void btn_XuatHD_Click(object sender, EventArgs e)
         {
             DAOVoucher.XoaVoucher(maHDPT,maVC);
-            DAOHoaDonPT.SuaTongTienHDPT(maHDPT, txt_thanhTien.Text,cb_pttt.Text);
+            DAOHoaDonPT.SuaTongTienHDPT(maHDPT, txt_thanhTien.Text,cb_pttt.Text, khachHang_tt.CCCDKH);
 
             UC_HoaDonPT uc = new UC_HoaDonPT(user);
             this.Controls.Clear();

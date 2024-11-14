@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,16 +25,15 @@ namespace QLMuaBanXeMay.UC
         private void UC_ThongKeTheoNhanVien_Load(object sender, EventArgs e)
         {
             cbbThang.SelectedIndex = 0;
-            ThongKeTheoNV();
         }
 
-        private void ThongKeTheoNV()
+        private void DisplayChart(DataTable dt)
         {
             int selectedMonth = int.Parse(cbbThang.SelectedItem.ToString());
             int selectedYear = DateTime.Now.Year; // Hoặc lấy năm từ một ComboBox khác nếu có
 
             // Gọi phương thức từ DAOThongKe để lấy dữ liệu
-            DataTable dt = DAOThongKe.ThongKeDoanhThuTheoNhanVien(selectedMonth, selectedYear);
+            
 
             // Xóa dữ liệu và series cũ của biểu đồ
             chartTKTheoNV.Series.Clear();
@@ -96,9 +96,77 @@ namespace QLMuaBanXeMay.UC
             chartTKTheoNV.ChartAreas[0].RecalculateAxesScale(); // Tính toán lại tỷ lệ trục
         }
 
-            private void cbbThang_SelectedIndexChanged(object sender, EventArgs e)
+        private void dgvThongKe_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ThongKeTheoNV();
+
+        }
+
+        private void btnLoadDuLieu_Click(object sender, EventArgs e)
+        {
+            int month = int.Parse(cbbThang.SelectedItem.ToString());
+            int year = int.Parse(cbbNam.SelectedItem.ToString());
+
+            DataTable dt = DAOThongKe.ThongKeDoanhThuTheoNhanVien(month, year);
+            dgvThongKe.DataSource = dt;
+
+            // Hiển thị dữ liệu biểu đồ
+            DisplayChart(dt);
+        }
+
+        private void ExportToCSV(DataGridView dgv, string filename)
+        {
+            using (StreamWriter writer = new StreamWriter(filename, false, Encoding.UTF8))
+            {
+                // Ghi tiêu đề cột
+                for (int i = 0; i < dgv.Columns.Count; i++)
+                {
+                    writer.Write($"\"{dgv.Columns[i].HeaderText}\"");
+                    if (i < dgv.Columns.Count - 1) writer.Write(";"); // Sử dụng dấu chấm phẩy
+                }
+                writer.WriteLine();
+
+                // Ghi từng hàng dữ liệu
+                foreach (DataGridViewRow row in dgv.Rows)
+                {
+                    if (!row.IsNewRow)
+                    {
+                        for (int i = 0; i < dgv.Columns.Count; i++)
+                        {
+                            var cellValue = row.Cells[i].Value?.ToString() ?? string.Empty;
+
+                            // Kiểm tra và định dạng giá trị là số lớn thành chuỗi
+                            if (decimal.TryParse(cellValue, out decimal _))
+                            {
+                                cellValue = $"=\"{cellValue}\"";  // Thêm công thức ="value" để giữ định dạng số
+                            }
+                            else
+                            {
+                                cellValue = $"\"{cellValue.Replace("\"", "\"\"")}\"";
+                            }
+
+                            writer.Write(cellValue);
+
+                            if (i < dgv.Columns.Count - 1) writer.Write(";");
+                        }
+                        writer.WriteLine();
+                    }
+                }
+            }
+        }
+
+        private void btnXuatFile_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "CSV files (*.csv)|*.csv",
+                Title = "Save data to CSV"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ExportToCSV(dgvThongKe, saveFileDialog.FileName);
+                MessageBox.Show("Data exported successfully!", "Export", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

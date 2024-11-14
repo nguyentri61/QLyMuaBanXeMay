@@ -1,4 +1,5 @@
 ﻿using QLMuaBanXeMay.Class;
+using QLMuaBanXeMay.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace QLMuaBanXeMay.WF
         public Form_DangNhap()
         {
             InitializeComponent();
+            DAOVoucher.XoaVoucherHH();
         }
 
         private void btn_dangnhap_Click(object sender, EventArgs e)
