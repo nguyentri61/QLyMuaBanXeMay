@@ -33,7 +33,6 @@ namespace QLMuaBanXeMay.DAO
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
-                    MessageBox.Show(sql);
                     MY_DB.closeConnection();
 
                     return dt;

@@ -101,7 +101,6 @@ namespace QLMuaBanXeMay.DAO
         }
         public static DataTable LoadThongTinTongHop(int cccdNV, int thang, int nam)
         {
-            MessageBox.Show(thang.ToString());
             using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.TinhTienLuongChiTiet(@CCCDNV,@YEAR,@MONTH);", MY_DB.getConnection()))
             {
                 command.Parameters.AddWithValue("@CCCDNV", cccdNV);

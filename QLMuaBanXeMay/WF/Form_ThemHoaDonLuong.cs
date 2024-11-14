@@ -36,7 +36,13 @@ namespace QLMuaBanXeMay.WF
             if (dgvThongTinHoaDonNV.Rows.Count > 0)
             {
                 Loadtxt();
-            }    
+                dgthongTinTongHopLuongNV.Visible = true;
+                btnXuatHoaDon.Visible = true;
+            }
+            else {
+                dgthongTinTongHopLuongNV.Visible = false;
+                btnXuatHoaDon.Visible = false;
+            }
                 
         }
         private void Loadtxt()
@@ -46,6 +52,7 @@ namespace QLMuaBanXeMay.WF
             txtMaNV.Text = row.Cells[0].Value.ToString();
             txtTenNV.Text = row.Cells[1].Value.ToString();
             txtChucVu.Text = row.Cells[2].Value.ToString();
+
 
         }
         private void dgvThongTinHoaDonNV_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -98,7 +105,7 @@ namespace QLMuaBanXeMay.WF
             }
             catch
             {
-
+                MessageBox.Show("Vui lòng kiểm tra lại thông tin");
             }
         }
 

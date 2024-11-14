@@ -101,11 +101,11 @@
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(721, 157);
+            this.btn_Add.Location = new System.Drawing.Point(708, 157);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(170, 38);
+            this.btn_Add.Size = new System.Drawing.Size(196, 38);
             this.btn_Add.TabIndex = 20;
-            this.btn_Add.Text = "Thêm vào ";
+            this.btn_Add.Text = "Thêm vào giỏ hàng";
             this.btn_Add.UseVisualStyleBackColor = true;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
@@ -121,7 +121,7 @@
             // 
             // btn_xuat
             // 
-            this.btn_xuat.Location = new System.Drawing.Point(910, 157);
+            this.btn_xuat.Location = new System.Drawing.Point(921, 157);
             this.btn_xuat.Name = "btn_xuat";
             this.btn_xuat.Size = new System.Drawing.Size(170, 38);
             this.btn_xuat.TabIndex = 18;

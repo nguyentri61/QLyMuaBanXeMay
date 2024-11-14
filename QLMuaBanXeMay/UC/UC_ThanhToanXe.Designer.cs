@@ -80,6 +80,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.txt_ggToida = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -641,9 +642,19 @@
             this.label24.TabIndex = 16;
             this.label24.Text = "Giới Hạn:";
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(712, 700);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(19, 16);
+            this.label20.TabIndex = 24;
+            this.label20.Text = "%";
+            // 
             // UC_ThanhToanXe
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.txt_ggToida);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.txt_giamgia);
@@ -725,5 +736,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox txt_ggToida;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label20;
     }
 }

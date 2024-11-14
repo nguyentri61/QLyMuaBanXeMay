@@ -86,7 +86,6 @@ namespace QLMuaBanXeMay.UC
                 
                 int a = -2;
                 a = DAOVoucher.GetOptimalVoucher(khachHang_tt.CCCDKH, xeMay_tt.DonGia);
-                MessageBox.Show(a.ToString());
                 cb_VC.SelectedValue = a;
 
             }

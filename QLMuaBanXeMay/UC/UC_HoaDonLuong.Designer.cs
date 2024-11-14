@@ -67,7 +67,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnTimMaHD = new System.Windows.Forms.Button();
             this.txtTimMaHD = new System.Windows.Forms.TextBox();
-            this.btnXemChiTiet = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.groupBox3.SuspendLayout();
@@ -466,21 +465,6 @@
             this.txtTimMaHD.Size = new System.Drawing.Size(192, 27);
             this.txtTimMaHD.TabIndex = 0;
             // 
-            // btnXemChiTiet
-            // 
-            this.btnXemChiTiet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXemChiTiet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXemChiTiet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXemChiTiet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXemChiTiet.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXemChiTiet.ForeColor = System.Drawing.Color.White;
-            this.btnXemChiTiet.Location = new System.Drawing.Point(818, 691);
-            this.btnXemChiTiet.Name = "btnXemChiTiet";
-            this.btnXemChiTiet.Size = new System.Drawing.Size(180, 45);
-            this.btnXemChiTiet.TabIndex = 56;
-            this.btnXemChiTiet.Text = "Xem chi tiết";
-            this.btnXemChiTiet.Click += new System.EventHandler(this.btnXemChiTiet_Click);
-            // 
             // btnThemHoaDon
             // 
             this.btnThemHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -500,7 +484,6 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.btnThemHoaDon);
-            this.Controls.Add(this.btnXemChiTiet);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label2);
@@ -553,7 +536,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnTimMaHD;
         private System.Windows.Forms.TextBox txtTimMaHD;
-        private Guna.UI2.WinForms.Guna2Button btnXemChiTiet;
         private Guna.UI2.WinForms.Guna2Button btnThemHoaDon;
         private System.Windows.Forms.DataGridViewTextBoxColumn maHDLDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cCCDNVDataGridViewTextBoxColumn;

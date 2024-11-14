@@ -64,7 +64,6 @@ namespace QLMuaBanXeMay.UC
 
             int a = -2;
             a = DAOVoucher.GetOptimalVoucher(khachHang_tt.CCCDKH, Double.Parse(txt_thanhTien.Text));
-            MessageBox.Show(a.ToString());
             cb_VC.SelectedValue = a;
 
         }

@@ -65,6 +65,7 @@
             this.txt_giamgia = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.cb_VC = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -478,9 +479,19 @@
             this.cb_VC.TabIndex = 18;
             this.cb_VC.SelectedIndexChanged += new System.EventHandler(this.cb_VC_SelectedIndexChanged);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(708, 720);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 16);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "%";
+            // 
             // UC_ThanhToanPT
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_ggToida);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.txt_giamgia);
@@ -542,5 +553,6 @@
         private System.Windows.Forms.TextBox txt_giamgia;
         private System.Windows.Forms.Label label23;
         private Guna.UI2.WinForms.Guna2ComboBox cb_VC;
+        private System.Windows.Forms.Label label2;
     }
 }
