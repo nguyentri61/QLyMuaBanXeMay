@@ -107,7 +107,7 @@ namespace QLMuaBanXeMay.DAO
         }
         public static int GetOptimalVoucher(int cccdKH, double donGiaXe)
         {
-            int maVC = -1;
+            int maVC = 0;
 
             using (SqlCommand command = new SqlCommand("SELECT dbo.GetVoucherToiUu(@CCCDKH, @DonGiaXe)", MY_DB.getConnection()))
             {

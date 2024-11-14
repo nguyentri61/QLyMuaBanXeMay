@@ -14,34 +14,7 @@ namespace QLMuaBanXeMay.DAO
     {
         public static int ThemHoaDonPT(HoaDonPT hoaDonPT)
         {
-            using (SqlCommand checkCmd = new SqlCommand(@"SELECT dbo.CheckVoucherExists(@CCCDKH, @TongTien)", MY_DB.getConnection()))
-            {
-                try
-                {
-                    MY_DB.openConnection();
-                    checkCmd.Parameters.AddWithValue("@CCCDKH", hoaDonPT.CCCDKH);
-                    checkCmd.Parameters.AddWithValue("@TongTien", hoaDonPT.TongTien);
-
-                    int exists = (int)checkCmd.ExecuteScalar();
-
-                    if (exists == 1)
-                    {
-                        MessageBox.Show("Khách hàng đã có voucher này trước đó.\nKhông được cập nhật thêm!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Khách hàng vừa nhận được voucher mới");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
-                finally
-                {
-                    MY_DB.closeConnection();
-                }
-            }
+            
             int maHDPT;
             using (SqlCommand cmd = new SqlCommand("ThemHoaDonPT", MY_DB.getConnection()))
             {
@@ -96,8 +69,36 @@ namespace QLMuaBanXeMay.DAO
                 }
             }
         }
-        public static void SuaTongTienHDPT(int maHDPT, string thanhtien, string pttt)
+        public static void SuaTongTienHDPT(int maHDPT, string thanhtien, string pttt, int cccdkh)
         {
+            using (SqlCommand checkCmd = new SqlCommand(@"SELECT dbo.CheckVoucherExists(@CCCDKH, @TongTien)", MY_DB.getConnection()))
+            {
+                try
+                {
+                    MY_DB.openConnection();
+                    checkCmd.Parameters.AddWithValue("@CCCDKH", cccdkh);
+                    checkCmd.Parameters.AddWithValue("@TongTien", Double.Parse(thanhtien));
+
+                    int exists = (int)checkCmd.ExecuteScalar();
+
+                    if (exists == 1)
+                    {
+                        MessageBox.Show("Khách hàng đã có voucher này trước đó.\nKhông được cập nhật thêm!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Khách hàng vừa nhận được voucher mới");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+                finally
+                {
+                    MY_DB.closeConnection();
+                }
+            }
             using (SqlCommand command = new SqlCommand("CapNhatThanhTienChoHDPT", MY_DB.getConnection()))
             {
                 try

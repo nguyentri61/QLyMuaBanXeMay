@@ -47,16 +47,16 @@ namespace QLMuaBanXeMay.WF
                             string chucVu = reader.GetString(7);
                             int luongCoBan = reader.GetInt32(8);
 
-                            if (chucVu != "Quản Lý")
-                            {
-                                DangNhap.username = txt_taikhoan.Text;
-                                DangNhap.password = txt_matkhau.Text;
-                                MY_DB.setConnectionNV();
-                            }
-                            else
-                            {
-                                MY_DB.setConnectionQL();
-                            }
+                            //if (chucVu != "Quản Lý")
+                            //{
+                            //    DangNhap.username = txt_taikhoan.Text;
+                            //    DangNhap.password = txt_matkhau.Text;
+                            //    MY_DB.setConnectionNV();
+                            //}
+                            //else
+                            //{
+                            //    MY_DB.setConnectionQL();
+                            //}
 
 
                             NhanVien nhanVien = new NhanVien(cccdNV,tenNV,ngaySinh,gioiTinh,sdt,diaChi,email,chucVu, luongCoBan);
