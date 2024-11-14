@@ -79,6 +79,7 @@
             this.dtpStartDate.ShowUpDown = true;
             this.dtpStartDate.Size = new System.Drawing.Size(84, 22);
             this.dtpStartDate.TabIndex = 4;
+            this.dtpStartDate.Value = new System.DateTime(2024, 1, 1, 20, 42, 0, 0);
             this.dtpStartDate.ValueChanged += new System.EventHandler(this.dtpStartDate_ValueChanged);
             // 
             // label3

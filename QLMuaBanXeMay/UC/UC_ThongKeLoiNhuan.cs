@@ -20,6 +20,7 @@ namespace QLMuaBanXeMay.UC
         public UC_ThongKeLoiNhuan()
         {
             InitializeComponent();
+            UC_ThongKeLoiNhuan_LoadBD();
 
 
         }
