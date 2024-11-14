@@ -56,24 +56,5 @@ namespace QLMuaBanXeMay.DAO
                 }
             }
         }
-        public static void XoaTaiKhoan(int cccdNV)
-        {
-            using (SqlCommand command = new SqlCommand("XoaTaiKhoan", MY_DB.getConnection()))
-            {
-                try
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@CCCDNV", cccdNV);
-
-                    MY_DB.openConnection();
-                    command.ExecuteNonQuery();
-                    MY_DB.closeConnection();
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
-            }
-        }
     }
 }

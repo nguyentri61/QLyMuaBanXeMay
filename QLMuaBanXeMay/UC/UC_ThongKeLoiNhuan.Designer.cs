@@ -79,6 +79,7 @@
             this.dtpStartDate.ShowUpDown = true;
             this.dtpStartDate.Size = new System.Drawing.Size(84, 22);
             this.dtpStartDate.TabIndex = 4;
+            this.dtpStartDate.Value = new System.DateTime(2024, 1, 1, 19, 38, 0, 0);
             this.dtpStartDate.ValueChanged += new System.EventHandler(this.dtpStartDate_ValueChanged);
             // 
             // label3
@@ -103,8 +104,7 @@
             // 
             // UC_ThongKeLoiNhuan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.dtpEndate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dtpStartDate);
@@ -113,6 +113,7 @@
             this.Controls.Add(this.cartesianChart1);
             this.Name = "UC_ThongKeLoiNhuan";
             this.Size = new System.Drawing.Size(1300, 700);
+            this.Load += new System.EventHandler(this.UC_ThongKeLoiNhuan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

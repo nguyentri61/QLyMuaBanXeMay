@@ -27,14 +27,22 @@ namespace QLMuaBanXeMay.WF
 
         private void Form_ChiTietHoaDonLuong_Load(object sender, EventArgs e)
         {
-            lbCCCD.Text = cthdl.CCCDNV.ToString();
-            lbHoTen.Text = cthdl.TenNV.ToString();
-            lbChucVu.Text = cthdl.ChucVu.ToString();
-            lbMaHD.Text = cthdl.MaHDL.ToString();
-            lbNgayXuat.Text = cthdl.NgayXuat.ToShortDateString();
-            lbSoGioLam.Text = cthdl.SoGioLam.ToString();
-            lbLuongCoBan.Text = cthdl.LuongCoBan.ToString();
-            lbTongLuong.Text = cthdl.TongTien.ToString();
+            try
+            {
+                lbCCCD.Text = cthdl.CCCDNV.ToString();
+                lbHoTen.Text = cthdl.TenNV.ToString();
+                lbChucVu.Text = cthdl.ChucVu.ToString();
+                lbMaHD.Text = cthdl.MaHDL.ToString();
+                lbNgayXuat.Text = cthdl.NgayXuat.ToShortDateString();
+                lbSoGioLam.Text = cthdl.SoGioLam.ToString();
+                lbLuongCoBan.Text = cthdl.LuongCoBan.ToString();
+                lbTongLuong.Text = cthdl.TongTien.ToString();
+            }
+            catch
+            {
+                
+            }
+
         }
     }
 }

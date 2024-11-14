@@ -69,6 +69,7 @@
             this.txtTimMaHD = new System.Windows.Forms.TextBox();
             this.btnXemChiTiet = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemHoaDon = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDonLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewHoaDonLuongNhanVienBindingSource)).BeginInit();
@@ -562,5 +563,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn luongCoBanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongTienDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayXuatDataGridViewTextBoxColumn;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

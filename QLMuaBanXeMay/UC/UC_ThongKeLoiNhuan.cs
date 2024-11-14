@@ -20,7 +20,7 @@ namespace QLMuaBanXeMay.UC
         public UC_ThongKeLoiNhuan()
         {
             InitializeComponent();
-
+            UC_ThongKeLoiNhuan_LoadBD();
 
         }
         private void UC_ThongKeLoiNhuan_LoadBD()
@@ -28,23 +28,17 @@ namespace QLMuaBanXeMay.UC
             DataTable chartData = DAOThongKe.getChartData(Convert.ToDateTime(dtpStartDate.Value),Convert.ToDateTime(dtpEndate.Value));
             var months = new List<string>();
             var revenueData = new ChartValues<double>();
-            var profitData = new ChartValues<double>();
             var salaryCostData = new ChartValues<double>();
-            var costRatioData = new ChartValues<double>();
             foreach (DataRow row in chartData.Rows)
             {
                 string monthLabel = $"{row["Nam"]}-{row["Thang"]}";
 
                 double revenue = row["TongDoanhThu"] == DBNull.Value ? 0 : Convert.ToDouble(row["TongDoanhThu"]);
-                double profit = row["LoiNhuanGop"] == DBNull.Value ? 0 : Convert.ToDouble(row["LoiNhuanGop"]);
                 double salaryCost = row["TongChiPhiLuong"] == DBNull.Value ? 0 : Convert.ToDouble(row["TongChiPhiLuong"]);
-                double costRatio = row["TyLeChiPhiHangHoa"] == DBNull.Value ? 0 : Convert.ToDouble(row["TyLeChiPhiHangHoa"]);
 
                 months.Add(monthLabel);
                 revenueData.Add(revenue);
-                profitData.Add(profit);
                 salaryCostData.Add(salaryCost);
-                costRatioData.Add(costRatio);
             }
 
 
@@ -56,13 +50,6 @@ namespace QLMuaBanXeMay.UC
                     Fill = System.Windows.Media.Brushes.Transparent
                 };
 
-                var profitSeries = new LineSeries
-                {
-                    Title = "Lợi Nhuận",
-                    Values = profitData,
-                    Stroke = System.Windows.Media.Brushes.Red,
-                    Fill = System.Windows.Media.Brushes.Transparent
-                };
 
                 var salaryCostSeries = new LineSeries
                 {
@@ -72,19 +59,11 @@ namespace QLMuaBanXeMay.UC
                     Fill = System.Windows.Media.Brushes.Transparent
                 };
 
-                var costRatioSeries = new LineSeries
-                {
-                    Title = "Tỷ Lệ Chi Phí Hàng Hóa",
-                    Values = costRatioData,
-                    Stroke = System.Windows.Media.Brushes.Orange,
-                    Fill = System.Windows.Media.Brushes.Transparent
-                };
 
                 cartesianChart1.Series.Clear();
                 cartesianChart1.Series.Add(revenueSeries);
-                cartesianChart1.Series.Add(profitSeries);
                 cartesianChart1.Series.Add(salaryCostSeries);
-                cartesianChart1.Series.Add(costRatioSeries);
+
 
                 var axisX = new Axis
                 {
@@ -115,6 +94,11 @@ namespace QLMuaBanXeMay.UC
         private void dtpEndate_ValueChanged(object sender, EventArgs e)
         {
             UC_ThongKeLoiNhuan_LoadBD();
+        }
+
+        private void UC_ThongKeLoiNhuan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
